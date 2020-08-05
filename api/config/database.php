@@ -15,7 +15,7 @@ class Database {
     
     try{
       $this->conx = new PDO("mysql:host=" . $this->host . "; dbname=" . $this->db_name, $this->db_user, $this->db_pass);
-      $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      $this->conx->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch(PDOException $e) {
       echo "Connection failed: " . $e->getMessage();
