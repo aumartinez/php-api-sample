@@ -13,7 +13,7 @@ class Product {
   public $cat_name;
   public $created;
   
-  public function __construct(string $db) {
+  public function __construct($db) {
     $this->conx = $db;
   }
   
