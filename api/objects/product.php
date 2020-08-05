@@ -3,7 +3,7 @@
 class Product {
   
   private $conx;
-  private $table_name;
+  private $table_name = "products";
   
   public $id;
   public $name;
