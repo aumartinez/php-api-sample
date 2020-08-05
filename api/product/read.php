@@ -9,7 +9,7 @@ require_once ("../objects/product.php");
 $database = new Database();
 $db = $database->open_link();
 
-$product = new Product(string $db);
+$product = new Product($db);
 
 $stmt = $product->read();
 $rows = $stmt->rowCount();
