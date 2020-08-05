@@ -27,8 +27,8 @@ if ($rows > 0) {
     "name" => $name,
     "description" => html_entity_decode($description),
     "price" => $price,
-    "category_id" => $cat_id,
-    "category_name" => $cat_name,
+    "category_id" => $category_id,
+    "category_name" => $category_name,
     );
     
     $prod_arr["records"] = $prod_item;

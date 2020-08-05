@@ -9,8 +9,8 @@ class Product {
   public $name;
   public $description;
   public $price;
-  public $cat_id;
-  public $cat_name;
+  public $category_id;
+  public $category_name;
   public $created;
   
   public function __construct($db) {
