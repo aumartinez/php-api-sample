@@ -47,5 +47,14 @@ if (
     echo json_encode($mess);
   }
 }
+else {
+  http_response_code(400);
+  
+  $mess = array(
+  "message" => "Unable to create product. Data is incomplete.",
+  );
+  
+  echo json_encode($mess);
+}
 
 ?>
