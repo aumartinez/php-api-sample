@@ -14,7 +14,7 @@ class Database {
     $this->conx = null;
     
     try{
-      $this->conx = new PDO("mysql:host=" . $this->host . "; dbname=" . $this->db_name; $this->db_user; $this->db_pass);
+      $this->conx = new PDO("mysql:host=" . $this->host . "; dbname=" . $this->db_name, $this->db_user, $this->db_pass);
       $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch(PDOException $e) {
