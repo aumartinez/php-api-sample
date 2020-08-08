@@ -50,6 +50,7 @@ class Product {
     
     # Sanitization
     $this->name = htmlspecialchars(strip_tags($this->name));
+    
   }
   
 }
